@@ -1,0 +1,72 @@
+# Magento specific
+/app/etc/env.php
+/app/etc/config.php
+
+# Composer dependencies
+/vendor/
+/composer.lock
+
+# Node dependencies
+/node_modules/
+/yarn.lock
+
+# Static content deployment
+/pub/static/*
+!/pub/static/.htaccess
+
+# Media files
+/pub/media/*
+!/pub/media/.htaccess
+
+# Cache, logs, sessions
+/var/*
+!/var/.htaccess
+
+# IDE and OS files
+*.swp
+*.swo
+*.idea/
+*.vscode/
+.DS_Store
+Thumbs.db
+
+# Backup and temp files
+*.bak
+*.tmp
+*.log
+
+# PHPUnit test results
+/test-results/
+
+generated/
+
+# Archivos y carpetas generados
+/var/
+/pub/static/
+/pub/media/tmp/
+/pub/media/catalog/product/cache/
+/generated/
+/vendor/
+/app/etc/env.php
+/app/etc/config.php
+
+# Archivos de sistema y temporales
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Archivos de Composer
+composer.lock
+auth.json
+
+# Archivos de configuración de IDEs
+.idea/
+.vscode/
+*.iml
+
+# Otros
+/node_modules/
+npm-debug.log
