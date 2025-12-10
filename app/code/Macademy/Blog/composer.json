@@ -1,0 +1,18 @@
+{
+    "name": "macademy/module-blog",
+    "description": "Magento 2 Blog Module by Macademy",
+    "require": {
+        "php": "~7.4.0||~8.1.0"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "Macademy\\Blog\\": ""
+        }
+    }
+}
