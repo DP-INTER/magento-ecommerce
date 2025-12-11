@@ -2,13 +2,23 @@
 
 namespace Macademy\Blog\Controller\Index;
 
+
 use Magento\Framework\App\Action\HttpGetActionInterface;
+use Magento\Framework\Controller\Result\Forward;
+use Magento\Framework\Controller\Result\ForwardFactory;
 
 class Index implements HttpGetActionInterface
 {
-    public function execute()
+    public function __construct(
+        private ForwardFactory $forwardFactory
+    )
+    {}
+
+    public function execute(): Forward
     {
-        // Controller logic goes here
-        die('Blog index');
+        /** @var Forward $forward */
+        $forward = $this->forwardFactory->create();
+        $forward->setController('post')->forward('list');
+        return $forward;
     }
 }
