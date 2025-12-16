@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Macademy\Blog\Api\Data;
+namespace Macademy\Blog\Api;
 
 use Macademy\Blog\Api\Data\PostInterface;
 

@@ -17,13 +17,13 @@ interface PostInterface
     /** 
      * @return int
     */
-    public function getId(): int;
+    public function getId();
 
     /** 
      * @param int $id
-     * @return void
+     * @return $this
     */
-    public function setId(int $id): void;
+    public function setId(int $id);
 
     /**
      * @return string
@@ -32,9 +32,9 @@ interface PostInterface
 
     /**
      * @param string $title
-     * @return void
+     * @return $this
      */
-    public function setTitle(string $title): void;
+    public function setTitle(string $title);
 
     /**
      * @return string
@@ -43,9 +43,9 @@ interface PostInterface
 
     /**
      * @param string $content
-     * @return void
+     * @return $this
      */
-    public function setContent(string $content): void;
+    public function setContent(string $content);
 
     /**
      * @return string
@@ -54,7 +54,7 @@ interface PostInterface
 
     /**
      * @param string $createdAt
-     * @return void
+     * @return $this
      */
-    public function setCreatedAt(string $createdAt): void;
+    public function setCreatedAt(string $createdAt);
 }

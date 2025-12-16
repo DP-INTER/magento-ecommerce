@@ -12,12 +12,23 @@ class Post extends AbstractModel implements PostInterface
         $this->_init(ResourceModel\Post::class);
     }
 
+    // public function getId(): int
+    // {
+    //     return (int) $this->getData(self::ID);
+    // }
+
+    // public function setId(int $id)
+    // {
+    //    $this->setData(self::ID, $id);
+    //    return $this;
+    // }
+
     public function getTitle(): string
     {
-        return (string) $this->getData(self::TITLE);
+        return $this->getData(self::TITLE);
     }
 
-    public function setTitle(string $title): void
+    public function setTitle(string $title)
     {
         $this->setData(self::TITLE, $title);
     }
@@ -27,9 +38,9 @@ class Post extends AbstractModel implements PostInterface
         return (string) $this->getData(self::CONTENT);
     }
 
-    public function setContent(string $content): void
+    public function setContent(string $content)
     {
-        $this->setData(self::CONTENT, $content);
+        return $this->setData(self::CONTENT, $content);
     }
 
 
@@ -38,7 +49,7 @@ class Post extends AbstractModel implements PostInterface
         return (string) $this->getData(self::CREATED_AT);
     }
 
-    public function setCreatedAt(string $createdAt): void
+    public function setCreatedAt(string $createdAt)
     {
         $this->setData(self::CREATED_AT, $createdAt);
     }

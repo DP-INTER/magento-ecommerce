@@ -2,16 +2,18 @@
 
 namespace Macademy\Blog\Model;
 
-use Macademy\Blog\Api\Data\PostInterface;
-use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Framework\Exception\CouldNotSaveException;
-use Macademy\Blog\Api\Data\PostRepositoryInterface;
+use Magento\Framework\Exception\NoSuchEntityException;
+
+use Macademy\Blog\Api\Data\PostInterface;
+use Macademy\Blog\Api\PostRepositoryInterface;
 use Macademy\Blog\Model\ResourceModel\Post as PostResourceModel;
+
 
 class PostRepository implements PostRepositoryInterface
 {
     public function __construct(
-        private PostFactory $postFactory,
+        private PostFactory $postFactory, // este es el factory del modelo Post, se crea automaticamente cuando se crea el modelo Post
         private PostResourceModel $postResourceModel
     )
     {}
