@@ -1,6 +1,6 @@
 # Magento specific
-/app/etc/env.php
-/app/etc/config.php
+# /app/etc/env.php
+# /app/etc/config.php
 
 # Composer dependencies
 /vendor/
@@ -47,8 +47,8 @@ generated/
 /pub/media/catalog/product/cache/
 /generated/
 /vendor/
-/app/etc/env.php
-/app/etc/config.php
+# /app/etc/env.php
+# /app/etc/config.php
 
 # Archivos de sistema y temporales
 .DS_Store
